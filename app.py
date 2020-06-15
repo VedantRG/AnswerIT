@@ -33,4 +33,5 @@ def ans():
     return render_template('work.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.debug = True
+    app.run()
