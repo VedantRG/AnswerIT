@@ -4,7 +4,12 @@ import QA as qa
 app = Flask(__name__)
 
 @app.route('/')
-def home():
+def redirection():
+    return redirect('/home')
+
+
+@app.route('/home')
+def homePage():
     return render_template('index.html')
 
 @app.route('/qapage')
